@@ -7,6 +7,10 @@
   background: #2f6690;
   padding: 7px;
 }
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
 .menu a {
   color: #fff;
   font-size: 22px;
@@ -16,6 +20,7 @@
 }
 .menu a:hover {
   font-size: 25px;
+  text-decoration: underline;
   transition: all 0.3s ease;
 }
 .menu a:not(:hover) {
@@ -23,10 +28,12 @@
   transition: all 0.3s ease;
 }
 /*Main container*/
-.clock-container {
+.clock-container,
+.chrono-container {
   margin-top: 20px;
 }
-.clock-container button {
+.clock-container button,
+.chrono-container #play-button {
   position: absolute;
   left: 40%;
   top: 170px;
@@ -41,16 +48,52 @@
   border: 1px solid #000;
   border-radius: 10px;
 }
-.clock-container button:hover {
+.chrono-container #pause-button {
+  position: absolute;
+  left: 55%;
+  top: 170px;
+  padding: 10px;
+  width: 150px;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  background: #2f6690;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.chrono-container #stop-button {
+  position: absolute;
+  left: 47%;
+  top: 250px;
+  padding: 10px;
+  width: 150px;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  background: #2f6690;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.clock-container button:hover,
+.chrono-container #play-button:hover,
+.chrono-container #pause-button:hover,
+.chrono-container #stop-button:hover {
   padding: 12px;
   font-size: 35px;
   transition: all 0.3s ease;
 }
-.clock-container button:not(:hover) {
+.clock-container button:not(:hover),
+.chrono-container #play-button:not(:hover),
+.chrono-container #pause-button:not(:hover),
+.chrono-container #stop-button:not(:hover) {
   padding: 10px;
   font-size: 30px;
   transition: all 0.3s ease;
 }
+/*CLOCK*/
+
 /*Separate containers*/
 .hours {
   margin-left: 30%;
@@ -90,5 +133,25 @@
 .minutes:not(:hover),
 .seconds:not(:hover) {
   font-size: 40px;
+  transition: all 0.3s ease;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  background: #2f6690;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+footer a:hover {
+  text-decoration: underline;
   transition: all 0.3s ease;
 }

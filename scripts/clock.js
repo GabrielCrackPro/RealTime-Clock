@@ -1,8 +1,9 @@
 //Select Items
+const clockContainer = document.querySelector('.clock-container')
 let hoursContainer = document.querySelector('.hours h3')
 let minutesContainer = document.querySelector('.minutes h3')
 let secondsContainer = document.querySelector('.seconds h3')
-let refreshButton = document.querySelector('#refresh-button')
+const refreshButton = document.querySelector('#refresh-button')
 //Set current time
 function UpdateTime() {
     let actualHours = new Date().getHours()
@@ -19,7 +20,8 @@ function UpdateTime() {
     minutesContainer.textContent = actualMinutes
     secondsContainer.textContent = actualSeconds
 }
+//Refresh the page
 refreshButton.addEventListener('click', () => {
     location.reload()
 })
-window.setInterval(UpdateTime, 1000)    
+window.setInterval(UpdateTime, 1000)
