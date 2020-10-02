@@ -17,22 +17,24 @@
     </nav>
     <div class="timer-container">
       <div class="hours">
-        <input type="text" id="hours-input" placeholder="HH" />
         <h3>0</h3>
         <p>Hours</p>
       </div>
       <div class="minutes">
-        <input type="text" id="minutes-input" placeholder="MM" />
         <h3>0</h3>
         <p>Minutes</p>
       </div>
       <div class="seconds">
-        <input type="text" id="seconds-input" placeholder="SS" />
         <h3>0</h3>
         <p>Seconds</p>
       </div>
+      <form id="timer-inputs">
+        <input type="text" id="hours-input" placeholder="HH" name="hours" />
+        <input type="text" id="minutes-input" placeholder="MM" name="minutes" />
+        <input type="text" id="seconds-input" placeholder="SS" name="seconds" />
+        <button id="start-button" type="submit">Start</button>
+      </form>
       <div class="control-buttons">
-        <button id="start-button">Start</button>
         <button id="pause-button">Pause</button>
         <button id="stop-button">Stop</button>
       </div>
