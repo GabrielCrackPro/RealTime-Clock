@@ -18,6 +18,18 @@ function startChrono() {
         hoursContainer.textContent++
     }
 }
+function pauseChrono() {
+    window.clearInterval(windowInterval)
+}
 startButton.addEventListener('click', () => {
-    window.setInterval(startChrono, 1000)
+    const windowInterval = window.setInterval(startChrono, 1000) //Start Chrono
+    pauseButton.addEventListener('click', () => {
+        window.clearInterval(windowInterval) //Pause Chrono
+    })
+    stopButton.addEventListener('click', () => {
+        window.clearInterval(windowInterval) //Stop Chrono
+        secondsContainer.textContent = '0'
+        minutesContainer.textContent = '0'
+        hoursContainer.textContent = '0'
+    })
 })
