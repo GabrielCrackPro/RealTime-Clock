@@ -11,3 +11,4 @@ New functions will be added soon
 
 - Add Dark Mode
 - Finish Timer
+- DEPLOY
