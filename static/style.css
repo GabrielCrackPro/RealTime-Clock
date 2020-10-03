@@ -100,6 +100,7 @@
 
 /*Separate containers*/
 .hours {
+  position: absolute;
   margin-left: 30%;
   top: 60px;
   font-size: 40px;
@@ -211,6 +212,7 @@ footer a:hover {
   color: #fff;
   font-weight: bold;
   font-size: 25px;
+  outline: none;
 }
 #start-button {
   position: absolute;
@@ -236,4 +238,20 @@ footer a:hover {
 #start-button:not(:hover) {
   font-size: 25px;
   transition: all 0.3s ease;
+}
+.timer-alert {
+  display: none;
+  position: absolute;
+  top: 300px;
+  left: 570px;
+  background: #1a91ef;
+  padding: 10px;
+  border: 3px solid #1161a0;
+  border-radius: 10px;
+}
+.timer-alert h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }

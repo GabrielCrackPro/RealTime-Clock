@@ -6,9 +6,9 @@ New functions will be added soon
 ## ADDED
 
 - Chrono Pause / Stop Button
+- Timer
 
 ## TO-DO
 
 - Add Dark Mode
-- Finish Timer
 - DEPLOY
