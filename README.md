@@ -11,4 +11,7 @@ New functions will be added soon
 ## TO-DO
 
 - Add Dark Mode
-- DEPLOY
+
+## Project deployed
+
+To visit the finished project <a href="https://real-time-clock.vercel.app/static/clock.html">Click Here</a>
