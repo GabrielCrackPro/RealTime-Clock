@@ -5,13 +5,15 @@ New functions will be added soon
 
 ## ADDED
 
-- Chrono Pause / Stop Button
+- Clock
+- Chrono
 - Timer
 
 ## TO-DO
 
 - Add Dark Mode
+- Make app responsive
 
-## Project deployed
+## PROJECT DEPLOYED
 
 To visit the finished project <a href="https://real-time-clock.vercel.app/static/clock.html">Click Here</a>
